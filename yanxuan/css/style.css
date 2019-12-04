@@ -1,0 +1,341 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: #fff;
+    font-size: 12px;
+}
+
+/* region 网站导航*/
+.site-nav {
+    height: 36px;
+    line-height: 36px;
+    background-color: #333;
+    
+}
+
+.site-nav .slogan {
+    float: left;
+    color: #ccc;
+    height: 36px;
+    margin-right: 20px;
+}
+.site-nav .slogan:hover {
+    color: #fff;
+}
+
+.site-nav .notice-list {
+    float: left;
+    height: 36px;
+    overflow: hidden;
+    padding-left:26px;
+    background: url("../images/notice-icon.gif") no-repeat left center;
+}
+.site-nav .notice-list a {
+    color: #b4a078;
+    text-decoration: underline;
+}
+.site-nav .notice-list:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-nav .right .login {
+    margin-right: 20px;
+}
+
+.site-nav .right .item {
+    float: left;
+    color: #ccc;
+}
+.site-nav .right .item:hover {
+    color: #fff;
+}
+.site-nav .right .divider {
+    float: left;
+    width: 1px;
+    height: 16px;
+    margin: 10px 10px 0;
+    background-color: #5c5c5c;
+}
+
+.site-nav .right .download-app::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 11px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: url("../images/component.png") 0px 0px;
+    
+}
+
+.site-nav .right .service::after {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 11px;
+    margin-left: 10px;
+    vertical-align: middle;
+    background: url("../images/component.png") 0px -321px;
+}
+
+.site-nav .right .service:hover::after {
+
+    transform: rotate(180deg);
+}
+
+/* endregion*/
+
+/* region 功能导航*/
+
+.func-nav {
+    position: relative;
+
+    /*z-index: 1;*/
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+}
+.func-nav .row {
+    height: 204px;
+    background-color: transparent;
+}
+
+.func-nav .logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    height: 60px;
+    width: 180px;
+    margin: 0 auto;
+
+    background: url("../images/component.png") no-repeat 0 -146px;
+}
+
+.func-nav .logo a {
+    display: block;
+    height: 60px;
+    font-size: 0;
+}
+.func-nav .buy-car {
+    position: absolute;
+    right: 9px;
+    top: 65px;
+    width: 34px;
+    height: 32px;
+    /*background-color: #ff0;*/
+}
+.func-nav .buy-car .car{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 23px;
+    width: 23px;
+    background: url("../images/component.png") no-repeat 0px -113px;
+}
+
+.func-nav .buy-car .count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 19px;
+    width: 19px;
+    color: #fff;
+    text-align: center;
+    line-height: 19px;
+    font-size: 12px;
+    background: url("../images/component.png") no-repeat 0px -51px;
+}
+.func-nav .buy-car:hover .car {
+    background: url("../images/component.png") no-repeat 0px -80px;
+}
+
+.func-nav .search {
+    position: absolute;
+    top: 75px;
+    right: 60px;
+
+}
+
+.func-nav .search input {
+    line-height: 22;
+    height: 22px;
+    font-size: 12px;
+    width: 252px;
+    color: #333;
+    border:none;
+    border-bottom: 1px solid #D8CEBC;
+}
+
+.func-nav .search .placeholder {
+    position: absolute;
+    top: 2px;
+    left: 11px;
+    color: #999;
+}
+
+.func-nav .search .button {
+    float: right;
+    height: 20px;
+    width: 20px;
+    background: url("../images/component.png") no-repeat 0 -291px;
+    cursor: pointer;
+}
+.func-nav .search .button:hover {
+    background: url("../images/component.png") no-repeat 0 -261px;
+}
+.func-nav .tab-nav {
+    position: absolute;
+    bottom: 20px;
+    width:100%;
+    /*background-color: #0ff;*/
+
+}
+.func-nav .tab-nav .item {
+    float: left;
+
+    height: 23px;
+    margin: 0 24px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.func-nav .tab-nav .item a {
+    display: block;
+    padding-bottom: 5px;
+    color: #333;
+}
+.func-nav .tab-nav .item:hover a,
+.func-nav .tab-nav .item.active a {
+    border-bottom: 3px solid #b4a078;
+    color: #b4a078;
+}
+
+.func-nav .tab-nav .divider {
+    float: left;
+    width: 1px;
+    height: 20px;
+    background-color: #ccc;
+}
+
+/* endregion*/
+
+
+/* region 轮播图部分*/
+
+.slider {
+    position: relative;
+    width: 100%;
+    background-color: #00f;
+    overflow: hidden;
+}
+
+.slider .image-list {
+    position: relative;
+    /*设置图片居中*/
+    left: -960px;
+    margin-left:50%;
+    height: 420px;
+    /*overflow: hidden;*/
+}
+.slider .image-list li {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slider .pre {
+    left: 150px;
+}
+
+.slider .next {
+    right: 150px;
+}
+
+.slider .page-list  {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    /*background-color: #ff0;*/
+
+}
+.slider .page-list li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.slider .page-list button {
+
+    /* 设置为block,是为了不让button和li的vertical-align混淆在一起 */
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: #bfbbba;
+    cursor: pointer;
+}
+
+.slider .page-list button:hover,
+.slider .page-list .active  button {
+    box-shadow: 0 0 0 4px #dfcead;
+    border: 2px solid #b4a078;
+    background-color: transparent;
+}
+
+
+/* endregion*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* endregion*/

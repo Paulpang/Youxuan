@@ -1,0 +1,139 @@
+
+@charset "UTF-8";
+
+/* region 清除浮动*/
+.clear-fix::after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+.clear-fix {
+    zoom: 1;
+}
+
+/* endregion*/
+
+/* region 每一行主要内容 */
+.row {
+    position: relative;
+    width: 1090px;
+    height: 36px;
+    margin: 0 auto;
+}
+/* endregion*/
+
+/* region 区分左边\右边内容 */
+.left {
+    float: left;
+    height: 36px;
+    /*background-color: #f00;*/
+}
+.right {
+    float: right;
+    height: 36px;
+}
+/* endregion*/
+
+/* region 默认的a */
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #b4a078;
+}
+/* endregion */
+
+/* region 上一页/下一页按钮*/
+.arrow-btn {
+    position: absolute;
+    top: 200px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: url("../images/icon-normal.png") #D0C4AF;
+    cursor: pointer;
+}
+
+.arrow-btn.pre {
+    background-position: 0 -4700px;
+}
+
+.arrow-btn.next {
+    background-position: 0 -4880px;
+}
+
+/* endregion*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
